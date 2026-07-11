@@ -1,0 +1,9 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";var n,r,i,a,o,s,c,l,u,d=e((()=>{n=`_badge_1pq29_1`,r=`_dot_1pq29_17`,i=`_label_1pq29_25`,a=`_neutral_1pq29_31`,o=`_info_1pq29_37`,s=`_success_1pq29_43`,c=`_warning_1pq29_49`,l=`_error_1pq29_55`,u={badge:n,dot:r,label:i,neutral:a,info:o,success:s,warning:c,error:l}}));function f({status:e,children:t,className:n,"aria-label":r}){let i=t??h[e];return(0,p.jsxs)(`span`,{className:[u.badge,m[e],n].filter(Boolean).join(` `),"aria-label":r,children:[(0,p.jsx)(`span`,{className:u.dot,"aria-hidden":`true`}),(0,p.jsx)(`span`,{className:u.label,children:i})]})}var p,m,h,g=e((()=>{d(),p=t(),m={unmodified:u.neutral,draft:u.info,committed:u.success,conflict:u.error,"pending-delete":u.warning,synced:u.success,warning:u.warning,error:u.error},h={unmodified:`Unmodified`,draft:`Draft`,committed:`Committed`,conflict:`Conflict`,"pending-delete":`Pending delete`,synced:`Synced`,warning:`Warning`,error:`Error`},f.__docgenInfo={description:`StatusBadge — compact inline status indicator for editor lists, draft
+workflows, and sync states.`,methods:[],displayName:`StatusBadge`,props:{status:{required:!0,tsType:{name:`union`,raw:`| 'unmodified'
+| 'draft'
+| 'committed'
+| 'conflict'
+| 'pending-delete'
+| 'synced'
+| 'warning'
+| 'error'`,elements:[{name:`literal`,value:`'unmodified'`},{name:`literal`,value:`'draft'`},{name:`literal`,value:`'committed'`},{name:`literal`,value:`'conflict'`},{name:`literal`,value:`'pending-delete'`},{name:`literal`,value:`'synced'`},{name:`literal`,value:`'warning'`},{name:`literal`,value:`'error'`}]},description:``},children:{required:!1,tsType:{name:`ReactNode`},description:``},"aria-label":{required:!1,tsType:{name:`string`},description:`Accessible label when the visible text is abbreviated or contextual.`},className:{required:!1,tsType:{name:`string`},description:``}}}}));export{g as n,f as t};
