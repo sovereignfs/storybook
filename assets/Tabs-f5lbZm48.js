@@ -1,7 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";var n,r,i,a,o,s=e((()=>{n=`_tablist_126sw_1`,r=`_tab_126sw_1`,i=`_active_126sw_36`,a=`_inactive_126sw_42`,o={tablist:n,tab:r,active:i,inactive:a}}));function c({items:e,value:t,onChange:n,"aria-label":r}){return(0,l.jsx)(`div`,{role:`tablist`,"aria-label":r,className:o.tablist,children:e.map(e=>{let r=e.value===t;return(0,l.jsx)(`button`,{type:`button`,role:`tab`,"aria-selected":r,className:[o.tab,r?o.active:o.inactive].join(` `),onClick:()=>n(e.value),children:e.label},e.value)})})}var l,u=e((()=>{s(),l=t(),c.__docgenInfo={description:`Tabs — underline tab nav for section switching.
-
-Stateless: the active tab is fully controlled via \`value\` + \`onChange\`, so the
-caller owns state and controls the rendered panel content. This keeps the
-component RSC-compatible when wrapped by a client boundary upstream.
-
-Mobile: the tab bar scrolls horizontally with the native scrollbar hidden.`,methods:[],displayName:`Tabs`,props:{items:{required:!0,tsType:{name:`Array`,elements:[{name:`TabItem`}],raw:`TabItem[]`},description:``},value:{required:!0,tsType:{name:`string`},description:``},onChange:{required:!0,tsType:{name:`signature`,type:`function`,raw:`(value: string) => void`,signature:{arguments:[{type:{name:`string`},name:`value`}],return:{name:`void`}}},description:``},"aria-label":{required:!0,tsType:{name:`string`},description:``}}}}));export{u as n,c as t};

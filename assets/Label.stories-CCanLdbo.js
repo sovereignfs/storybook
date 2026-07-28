@@ -1,0 +1,20 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";import{n,t as r}from"./Label-CCH-D_q4.js";var i,a,o,s,c,l;e((()=>{n(),i=t(),a={title:`Components/Label`,component:r,parameters:{layout:`padded`},args:{children:`Label text`}},o={},s={args:{disabled:!0}},c={render:()=>(0,i.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:4},children:[(0,i.jsx)(r,{htmlFor:`example-input`,children:`Email address`}),(0,i.jsx)(`input`,{id:`example-input`,type:`email`,placeholder:`you@example.com`,style:{padding:`var(--sv-space-2) var(--sv-space-3)`,border:`1px solid var(--sv-color-border-strong)`,borderRadius:`var(--sv-radius-md)`,fontFamily:`var(--sv-font-family)`,fontSize:`var(--sv-font-size-sm)`}})]})},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{}`,...o.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    disabled: true
+  }
+}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 4
+  }}>
+      <Label htmlFor="example-input">Email address</Label>
+      <input id="example-input" type="email" placeholder="you@example.com" style={{
+      padding: 'var(--sv-space-2) var(--sv-space-3)',
+      border: '1px solid var(--sv-color-border-strong)',
+      borderRadius: 'var(--sv-radius-md)',
+      fontFamily: 'var(--sv-font-family)',
+      fontSize: 'var(--sv-font-size-sm)'
+    }} />
+    </div>
+}`,...c.parameters?.docs?.source}}},l=[`Default`,`Disabled`,`WithControl`]}))();export{o as Default,s as Disabled,c as WithControl,l as __namedExportsOrder,a as default};
