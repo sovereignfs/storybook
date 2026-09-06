@@ -1,0 +1,11 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";var n,r,i,a,o,s=e((()=>{n=`_shell_10qth_1`,r=`_header_10qth_7`,i=`_main_10qth_12`,a=`_footer_10qth_18`,o={shell:n,header:r,main:i,footer:a}}));function c({children:e,header:t,footer:n,headerHeight:r=60,footerHeight:i=60,className:a}){return(0,l.jsxs)(`div`,{className:[o.shell,a].filter(Boolean).join(` `),children:[t&&(0,l.jsx)(`div`,{className:o.header,style:{height:r},children:t}),(0,l.jsx)(`div`,{className:o.main,children:e}),n&&(0,l.jsx)(`div`,{className:o.footer,style:{height:i},children:n})]})}var l,u=e((()=>{s(),l=t(),c.__docgenInfo={description:`HeaderFooterLayout — header + main + optional footer, both fixed-height
+and independently optional, with main always claiming the remaining
+height. The vertical counterpart to ThreeColumnLayout: same purely
+structural approach (no color/background opinions, no awareness of what's
+inside each slot, no responsive behavior of its own — a plain flex
+column), just rotated. "Footer always at the bottom" falls out of flex
+layout alone; there is no position: fixed or safe-area handling here, so
+a caller composing this with the platform shell's own chrome still owns
+that separately.`,methods:[],displayName:`HeaderFooterLayout`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:`Main content — required, always fills whatever height header/footer don't claim.`},header:{required:!1,tsType:{name:`ReactNode`},description:``},footer:{required:!1,tsType:{name:`ReactNode`},description:``},headerHeight:{required:!1,tsType:{name:`number`},description:`px. Fixed height of the header, when present. Default 60 (matches
+ MobileHeader/--sv-shell-header-height's own default).`,defaultValue:{value:`60`,computed:!1}},footerHeight:{required:!1,tsType:{name:`number`},description:`px. Fixed height of the footer, when present. Default 60 (matches
+ MobileFooter/--sv-shell-footer-height's own default).`,defaultValue:{value:`60`,computed:!1}},className:{required:!1,tsType:{name:`string`},description:``}}}}));export{u as n,c as t};

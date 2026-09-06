@@ -1,0 +1,26 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";import{n,t as r}from"./Icon-DN8eu8DN.js";var i,a,o,s,c,l,u,d,f,p=e((()=>{i=`_row_16sr7_1`,a=`_swatch_16sr7_7`,o=`_swatchSelected_16sr7_21`,s=`_swatchNone_16sr7_29`,c=`_customWrapper_16sr7_47`,l=`_customWrapperEmpty_16sr7_67`,u=`_customInput_16sr7_76`,d=`_customPlusIcon_16sr7_125`,f={row:i,swatch:a,swatchSelected:o,swatchNone:s,customWrapper:c,customWrapperEmpty:l,customInput:u,customPlusIcon:d}}));function m(e){return e.toLowerCase()}function h({swatches:e,value:t,onChange:n,onSelectionComplete:i,allowNone:a=!1,noneLabel:o=`No color`,customLabel:s=`Custom color`,disabled:c=!1,"aria-label":l,className:u}){let d=t?m(t):null,p=e.find(e=>m(e.value)===d),h=d!==null&&!p,_=h&&t?t:e[0]?.value??`#000000`;return(0,g.jsxs)(`div`,{className:[f.row,u].filter(Boolean).join(` `),role:`group`,"aria-label":l,children:[a&&(0,g.jsx)(`button`,{type:`button`,role:`radio`,"aria-checked":t===null,"aria-label":o,title:o,disabled:c,className:[f.swatch,f.swatchNone,t===null?f.swatchSelected:``].filter(Boolean).join(` `),onClick:()=>{n(null),i?.()},children:(0,g.jsx)(r,{name:`x`,size:`sm`,"aria-hidden":!0})}),e.map(e=>(0,g.jsx)(`button`,{type:`button`,role:`radio`,"aria-checked":m(e.value)===d,"aria-label":e.label,title:e.label,disabled:c,className:[f.swatch,m(e.value)===d?f.swatchSelected:``].filter(Boolean).join(` `),style:{backgroundColor:e.value},onClick:()=>{n(e.value),i?.()}},e.value)),(0,g.jsxs)(`span`,{className:[f.customWrapper,h?f.swatchSelected:f.customWrapperEmpty].filter(Boolean).join(` `),children:[(0,g.jsx)(`input`,{type:`color`,className:f.customInput,"aria-label":s,title:s,disabled:c,value:_,onChange:e=>n(e.target.value)}),!h&&(0,g.jsx)(r,{name:`plus`,size:`sm`,"aria-hidden":!0,className:f.customPlusIcon})]})]})}var g,_=e((()=>{n(),p(),g=t(),h.__docgenInfo={description:`ColorPicker — a row of curated swatch suggestions plus a native
+\`<input type="color">\` trigger for picking any color, not just the
+curated set. The native color input is deliberately not a custom-built
+hue/saturation picker: it already gives every browser's own full-spectrum
+picker (with an eyedropper tool in most), guarantees valid hex output, and
+needs no bespoke a11y work of its own.
+
+\`value\` drives which affordance reads as selected: a hex matching a
+swatch highlights that swatch; a hex matching none of them highlights the
+custom trigger instead (its own dial shows that color); \`null\` (only
+meaningful with \`allowNone\`) highlights the "no color" option.
+
+The custom trigger shows a plain "+" on a neutral dashed box until a
+genuinely custom color is active — it never previews an arbitrary dial
+color the user hasn't actually chosen. The underlying native color input
+still needs *some* real hex to hold internally at all times (it has no
+true empty state), so that starting value stays invisible (\`opacity: 0\`
+on the input itself) rather than painted as this trigger's own swatch.`,methods:[],displayName:`ColorPicker`,props:{swatches:{required:!0,tsType:{name:`unknown`},description:`Curated quick-pick suggestions, in display order.`},value:{required:!0,tsType:{name:`union`,raw:`string | null`,elements:[{name:`string`},{name:`null`}]},description:'Current hex value, or `null` for no color. Compared case-insensitively\n against `swatches` — a value that doesn\'t match any swatch renders as\n the active "custom" selection instead.'},onChange:{required:!0,tsType:{name:`signature`,type:`function`,raw:`(value: string | null) => void`,signature:{arguments:[{type:{name:`union`,raw:`string | null`,elements:[{name:`string`},{name:`null`}]},name:`value`}],return:{name:`void`}}},description:``},onSelectionComplete:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Fires once after a discrete, complete pick — a swatch click or the "no
+color" click. Optional; most callers don't need it. Deliberately NOT
+fired from the native custom-color \`<input type="color">\`'s \`onChange\`
+— that can fire repeatedly while the user is still dragging inside the
+browser's own color dialog, so a caller using this to auto-close a
+wrapping \`Popover\` would otherwise slam it shut mid-adjustment.`},allowNone:{required:!1,tsType:{name:`boolean`},description:`Shows a leading "no color" option. Off by default — most consumers
+ (anything painting a fixed-size chip) always need a real color; only
+ a board canvas-style consumer typically wants "none" as a real choice.`,defaultValue:{value:`false`,computed:!1}},noneLabel:{required:!1,tsType:{name:`string`},description:``,defaultValue:{value:`'No color'`,computed:!1}},customLabel:{required:!1,tsType:{name:`string`},description:`Accessible name for the native color-input trigger that lets a user
+ pick any color, not just a curated swatch.`,defaultValue:{value:`'Custom color'`,computed:!1}},disabled:{required:!1,tsType:{name:`boolean`},description:``,defaultValue:{value:`false`,computed:!1}},"aria-label":{required:!0,tsType:{name:`string`},description:``},className:{required:!1,tsType:{name:`string`},description:``}}}}));export{_ as n,h as t};

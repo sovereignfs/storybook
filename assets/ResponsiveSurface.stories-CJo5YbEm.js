@@ -1,7 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{t}from"./jsx-runtime-CaZkqeYb.js";import{n,t as r}from"./ResponsiveSurface-CLm0AdUR.js";function i(e){return(0,a.jsx)(`div`,{style:{padding:`var(--sv-space-6)`,textAlign:`center`,fontFamily:`var(--sv-font-family)`,fontSize:`var(--sv-font-size-sm)`,color:`var(--sv-color-text-primary)`,border:`1px dashed var(--sv-color-border)`,borderRadius:`var(--sv-radius-md)`},children:e})}var a,o,s,c,l;e((()=>{n(),a=t(),o={title:`Components/ResponsiveSurface`,component:r,parameters:{layout:`padded`,docs:{description:{component:`Renders an entirely different component tree below a breakpoint, not a CSS squeeze of the same one — only the active side is ever mounted. See also the useResponsiveLayout hook for non-JSX values.`}}},args:{web:i(`Web tree — e.g. a three-column layout`),mobile:i(`Mobile tree — an entirely different component`)}},s={},c={parameters:{viewport:{defaultViewport:`mobile1`}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
-  parameters: {
-    viewport: {
-      defaultViewport: 'mobile1'
-    }
-  }
-}`,...c.parameters?.docs?.source}}},l=[`Default`,`MobileViewport`]}))();export{s as Default,c as MobileViewport,l as __namedExportsOrder,o as default};

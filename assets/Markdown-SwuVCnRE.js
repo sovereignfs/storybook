@@ -1,0 +1,29 @@
+import{i as e,s as t}from"./preload-helper-xPQekRTU.js";import{t as n}from"./iframe-BSD6rMsc.js";import{t as r}from"./jsx-runtime-CaZkqeYb.js";import{n as i,t as a}from"./Typography-BgP2vVmE.js";var o,s,c,l,u,d,f=e((()=>{o=`_block_1y81a_5`,s=`_blockquote_1y81a_21`,c=`_list_1y81a_29`,l=`_root_1y81a_3`,u=`_codeBlock_1y81a_56`,d={block:o,blockquote:s,list:c,root:l,codeBlock:u}}));function p(e){let t=/^([a-zA-Z][a-zA-Z\d+.-]*):/.exec(e)?.[1];return t===void 0||x.has(t.toLowerCase())}function m(e){let t=e.replace(/[\t\n\r]/g,``).trim();if(!t||!p(t))return null;try{return encodeURI(t)}catch{return null}}function h(e){let t=[],n=/\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`/,r=e;for(;r.length>0;){let e=n.exec(r);if(!e){t.push(r);break}e.index>0&&t.push(r.slice(0,e.index));let[i,a,o,s,c,l]=e,u=`md-inline-${b++}`;if(o!==void 0){let e=m(o);t.push(e===null?a:(0,y.jsx)(`a`,{href:e,children:a},u))}else s===void 0?c===void 0?l!==void 0&&t.push((0,y.jsx)(`code`,{children:l},u)):t.push((0,y.jsx)(`em`,{children:c},u)):t.push((0,y.jsx)(`strong`,{children:s},u));r=r.slice(e.index+i.length)}return t}function g(e,t){let n=e.replace(/\r\n/g,`
+`).split(`
+`),r=[],i=0,o=0;for(;i<n.length;){let e=n[i]??``;if(e.trim()===``){i++;continue}if(T(e)){let t=/^\s*(`{3,})(.*)$/.exec(e),a=t?.[1]??"```",s=(t?.[2]??``).trim(),c=RegExp(`^\\s*${a}\\s*$`);i++;let l=[];for(;i<n.length&&!c.test(n[i]??``);)l.push(n[i]??``),i++;i++,r.push((0,y.jsx)(`div`,{className:d.block,children:(0,y.jsx)(`pre`,{className:d.codeBlock,children:(0,y.jsx)(`code`,{"data-language":s||void 0,children:l.join(`
+`)})})},o++));continue}let s=/^(#{1,3})\s+(.*)$/.exec(e);if(s){let e=s[1]?.length??1;r.push((0,y.jsx)(`div`,{className:d.block,"data-heading":!0,children:(0,y.jsx)(a,{variant:`h${e}`,children:h(s[2]??``)})},o++)),i++;continue}if(S(e)){let e=[];for(;i<n.length&&S(n[i]??``);)e.push((n[i]??``).slice(2)),i++;r.push((0,y.jsx)(`div`,{className:d.block,children:(0,y.jsx)(`blockquote`,{className:d.blockquote,children:(0,y.jsx)(a,{variant:`body`,as:`p`,children:h(e.join(` `))})})},o++));continue}if(E(e)){let e=[],t;for(;i<n.length&&!k(n[i]??``);){let r=n[i]??``,a=/^(\d{1,9})[.)]\s+(.*)$/.exec(r);if(a)t===void 0&&(t=Number(a[1])),e.push(a[2]??``);else{let t=e.length-1;e[t]=`${e[t]??``} ${r.trim()}`}i++}r.push((0,y.jsx)(`div`,{className:d.block,children:(0,y.jsx)(`ol`,{className:d.list,start:t!==void 0&&t!==1?t:void 0,children:e.map((e,t)=>(0,y.jsx)(a,{variant:`body`,as:`li`,children:h(e)},t))})},o++));continue}if(C(e)){let e=[];for(;i<n.length&&!O(n[i]??``);){let t=n[i]??``;if(C(t))e.push(t.slice(2));else{let n=e.length-1;e[n]=`${e[n]??``} ${t.trim()}`}i++}r.push((0,y.jsx)(`div`,{className:d.block,children:(0,y.jsx)(`ul`,{className:d.list,children:e.map((e,t)=>(0,y.jsx)(a,{variant:`body`,as:`li`,children:h(e)},t))})},o++));continue}let c=[];for(;i<n.length&&!D(n[i]??``);)c.push((n[i]??``).trim()),i++;r.push((0,y.jsx)(`div`,{className:d.block,children:(0,y.jsx)(a,{variant:`body`,as:`p`,children:t?c.map((e,t)=>(0,y.jsxs)(v.Fragment,{children:[t>0&&(0,y.jsx)(`br`,{}),h(e)]},t)):h(c.join(` `))})},o++))}return r}function _({content:e,preserveLineBreaks:t=!1,className:n}){return(0,y.jsx)(`div`,{className:[d.root,n].filter(Boolean).join(` `),children:g(e,t)})}var v,y,b,x,S,C,w,T,E,D,O,k,A=e((()=>{v=t(n(),1),i(),f(),y=r(),b=0,x=new Set([`http`,`https`,`mailto`,`tel`]),S=e=>e.startsWith(`> `)||e===`>`,C=e=>e.startsWith(`- `),w=e=>/^#{1,3}\s+/.test(e),T=e=>/^\s*`{3,}/.test(e),E=e=>/^\d{1,9}[.)]\s+/.test(e),D=e=>e.trim()===``||w(e)||S(e)||C(e)||E(e)||T(e),O=e=>e.trim()===``||w(e)||S(e)||T(e)||E(e),k=e=>e.trim()===``||w(e)||S(e)||T(e)||C(e),_.__docgenInfo={description:`Renders a constrained markdown subset (see MarkdownProps) as styled React
+elements built from Typography — no HTML string injection. Primarily
+meant for long-form, first-party content pages (privacy policy, terms of
+service) sourced from a single markdown file — not a general-purpose
+CommonMark renderer for arbitrary markdown. Also fine for plain,
+user-typed multi-line text (a card description, a comment body) edited
+in an ordinary \`<textarea>\` and passed through unchanged, as long as
+\`preserveLineBreaks\` is set — see that prop's own doc comment for why it
+isn't the default.`,methods:[],displayName:`Markdown`,props:{content:{required:!0,tsType:{name:`string`},description:`Raw markdown source. Supports: headings (#/##/###), paragraphs,
+**bold**, *italic*, \`code\`, [links](url), unordered lists (-), ordered
+lists (1. / 1)), fenced code blocks (\`\`\`), and blockquotes (>),
+including soft-wrapped continuation lines within a paragraph or list
+item. Not a general-purpose CommonMark parser — no tables, images, or
+nested blocks.`},preserveLineBreaks:{required:!1,tsType:{name:`boolean`},description:`Renders every line within a paragraph on its own visual line (a
+\`<br>\` between them) instead of the default CommonMark-style soft-wrap
+(consecutive lines joined with a single space, requiring a blank line
+for a new paragraph). Off by default — the soft-wrap behavior is
+correct for this component's primary use (long-form, first-party
+content authored *as* markdown, where a hard line break is a
+deliberate \`\\\`  \` or blank-line choice). Turn this on when rendering
+plain, user-typed multi-line text that happens to be passed through
+this component (e.g. a card description or comment body edited in an
+ordinary \`<textarea>\`) — there, every Enter press is a real,
+intentional line break the user typed, and silently collapsing it
+into one run-on paragraph reads as broken, not as "markdown
+formatting applied."`,defaultValue:{value:`false`,computed:!1}},className:{required:!1,tsType:{name:`string`},description:``}}}}));export{A as n,_ as t};
