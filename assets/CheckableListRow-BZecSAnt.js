@@ -1,0 +1,16 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";var n,r,i,a,o,s,c,l,u,d;function f(){return(f=e((()=>{n=`_row_1f8bw_1`,r=`_tapTarget_1f8bw_8`,i=`_box_1f8bw_24`,a=`_checked_1f8bw_24`,o=`_tick_1f8bw_24`,s=`_icon_1f8bw_53`,c=`_label_1f8bw_60`,l=`_struck_1f8bw_85`,u=`_trailing_1f8bw_93`,d={row:n,tapTarget:r,box:i,checked:a,tick:o,icon:s,label:c,struck:l,trailing:u}})))()}function p({checked:e,onCheckedChange:t,label:n,icon:r,trailing:i,disabled:a=!1,className:o}){function s(){a||t(!e)}function c(e){(e.key===` `||e.key===`Enter`)&&(e.preventDefault(),s())}return(0,m.jsxs)(`div`,{className:[d.row,o].filter(Boolean).join(` `),children:[(0,m.jsxs)(`div`,{role:`checkbox`,"aria-checked":e,"aria-label":n,"aria-disabled":a||void 0,tabIndex:a?-1:0,className:d.tapTarget,onClick:s,onKeyDown:c,children:[(0,m.jsx)(`span`,{className:[d.box,e?d.checked:``].filter(Boolean).join(` `),children:e&&(0,m.jsx)(`svg`,{className:d.tick,viewBox:`0 0 10 8`,fill:`none`,"aria-hidden":`true`,children:(0,m.jsx)(`path`,{d:`M1 4l3 3 5-6`,stroke:`currentColor`,strokeWidth:`1.5`,strokeLinecap:`round`,strokeLinejoin:`round`})})}),r&&(0,m.jsx)(`span`,{className:d.icon,children:r}),(0,m.jsx)(`span`,{className:[d.label,e?d.struck:``].filter(Boolean).join(` `),children:n})]}),i&&(0,m.jsx)(`span`,{className:d.trailing,children:i})]})}var m;function h(){return(h=e((()=>{f(),m=t(),p.__docgenInfo={description:`CheckableListRow — a whole-row tap target that toggles a checked state,
+with strike-through on the label when checked. Built for "tap the row to
+mark it done" lists (Sovereign Shopper's tap-to-buy, SHP-07) where the
+checkbox itself is too small a target on mobile and the row already has
+nothing else competing for the tap.
+
+Renders as \`role="checkbox"\` on the row itself rather than composing
+\`Checkbox\`'s native \`<input>\` — nesting a real checkbox input inside the
+row's own click handler would mean two overlapping interactive elements
+(invalid HTML, and the input's own click would double-fire the row's
+toggle). The visual box matches \`Checkbox\`'s styling for consistency.
+
+\`trailing\` content (e.g. a \`QuantityStepper\`) is rendered outside the
+\`role="checkbox"\` element so its own interactive controls (+/- buttons)
+don't sit inside another interactive element either — clicking those
+doesn't toggle the row.`,methods:[],displayName:`CheckableListRow`,props:{checked:{required:!0,tsType:{name:`boolean`},description:``},onCheckedChange:{required:!0,tsType:{name:`signature`,type:`function`,raw:`(checked: boolean) => void`,signature:{arguments:[{type:{name:`boolean`},name:`checked`}],return:{name:`void`}}},description:``},label:{required:!0,tsType:{name:`string`},description:``},icon:{required:!1,tsType:{name:`ReactNode`},description:"Leading icon, e.g. a per-item `<Icon>`."},trailing:{required:!1,tsType:{name:`ReactNode`},description:"Trailing content, e.g. a quantity, a `QuantityStepper`, or a badge."},disabled:{required:!1,tsType:{name:`boolean`},description:``,defaultValue:{value:`false`,computed:!1}},className:{required:!1,tsType:{name:`string`},description:``}}}})))()}export{h as n,p as t};
