@@ -1,1 +1,0 @@
-import{t as e}from"./iframe-Biwe_z2i.js";e();
