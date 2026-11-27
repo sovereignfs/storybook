@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./useIsMobile-CD6XEPeY.js";function r({web:e,mobile:n,breakpointPx:r}){let i=t(r);return{isMobile:i,value:i?n:e}}function i(){return(i=e((()=>{n()})))()}export{r as n,i as t};
